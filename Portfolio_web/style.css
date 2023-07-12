@@ -1,0 +1,618 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@600&family=Montserrat:wght@100;500&family=Oswald:wght@500&family=PT+Sans&display=swap');
+
+ body {
+   background-color: #00203FFF;
+   font-family: 'Finlandica', sans-serif;
+   margin: 0px;
+   padding: 0px;
+   font-weight: light;
+   user-select: none;
+ }
+
+
+ .logo {
+   display: inline-block;
+   margin-top: 2px;
+ }
+
+ .logo img {
+   width: 140px;
+   height: 43px;
+   display: block;
+ }
+
+ /* nav{
+  position: fixed;
+  background-color: transparent;
+} */
+ .navbar {
+   margin-bottom: 20px;
+ }
+
+ .navbar ul {
+   display: flex;
+   list-style: none;
+   float: right;
+
+ }
+
+ .navbar ul li {
+   color: #ADEFD1FF;
+   margin: 50px;
+   margin-block: auto;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: light;
+   margin-bottom: 10px;
+
+ }
+
+ .navbar ul li:hover {
+   border-bottom: 2px solid #ADEFD1FF;
+   cursor: pointer;
+ }
+
+ .bio {
+   /* background-color: rgb(53, 53, 53); */
+   width: 100%;
+   height: 520px;
+   display: flex;
+
+ }
+
+ .mybio h1 {
+   font-family: 'Montserrat', sans-serif;
+   margin-left: 50px;
+   margin-top: 0px;
+   color: #ADEFD1FF;
+   font-weight: lighter;
+
+ }
+
+ .mybio h1 b {
+   font-size: 2.5rem;
+   font: weight 400px;
+ }
+
+ .mybio h2 {
+   margin-left: 50px;
+   margin-top: 10px;
+   font-weight: lighter;
+   font-size: 5rem;
+   font-family: 'Montserrat', sans-serif;
+   color: #ADEFD1FF;
+ }
+
+ .mybio p {
+   font-family: 'Montserrat', sans-serif;
+   margin-left: 50px;
+   margin-top: 0px;
+   color: #ADEFD1FF;
+   font-size: smaller;
+   font-weight: normal;
+ }
+
+ /* .mybio {
+    
+    width: 40%;
+    height: 450px;
+    border: none;
+    border-radius: 50%;
+    border-bottom:4px solid  rgb(202, 168, 0);
+    border-inline-end-width: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+} */
+
+
+
+ .mybio {
+   width: 40%;
+   height: 450px;
+   border: 8px solid;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   mask: 0;
+   border-image: repeating-linear-gradient(135deg, #ADEFD1FF 0 2px, #ececec 0 20px, 0 30px) 8;
+   -webkit-mask:
+     conic-gradient(from 180deg at top 8px right 8px, #ffffff00 90deg, #ffffff 0) var(--_i, 200%) 0 /200% var(--_i, 8px) border-box no-repeat,
+     conic-gradient(at bottom 8px left 8px, #ffffff00 90deg, #ffffff 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat,
+     linear-gradient(#ffffff 0 0) padding-box no-repeat;
+   transition: .3s, -webkit-mask-position .3s .3s;
+
+ }
+
+ .mybio:hover {
+   --_i: 100%;
+   color: #ADEFD1FF;
+   transition: .3s, -webkit-mask-size .3s .3s;
+   cursor: pointer;
+ }
+
+ .icons-mybio {
+filter: grayscale(100);
+   margin-left: 50px;
+   
+ }
+
+ 
+ .icons-mybio:hover{
+  filter: none;
+ }
+
+ .btn-cv {
+   position: relative;
+   margin-left: 50px;
+   margin-top: 40px;
+   width: 150px;
+   height: 40px;
+   border: none;
+   background-color: #ADEFD1FF;
+   border-radius: 4px;
+   cursor: pointer;
+   outline: none;
+   /* background-image: url('/Images/Yash_Gulati_Resume.pdf'); */
+ }
+
+ .btn-cv:hover {
+   background-color: darkslategrey;
+   color: #ADEFD1FF
+ }
+
+
+
+ .bio-image {
+   width: 60%;
+   height: 450px;
+   margin-top: 20px;
+
+   background-image: url('/Images/golden-mybio-background.png');
+   background-size: contain;
+ }
+
+ .bio-image img {
+   margin-left: 120px;
+   width: 430px;
+   height: 450px;
+ }
+
+ /* --------------------------------------------About me */
+ .about {
+   width: 100%;
+   height: 700px;
+   background-color: #ADEFD1FF;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+
+ }
+
+ .aboutpage {
+
+   height: 500px;
+   width: 880px;
+   border-inline-end: 60px solid rgb(0, 193, 106);
+   background-color: #00203FFF;
+   margin-top: 50px;
+   box-shadow: 5px 10px 18px #343434;
+ }
+
+ /* ------------------------------------------------------------------------------skills */
+ .skills {
+   width: 100%;
+   height: 600px;
+   /* background-image: url('/Images/green-back-cube.png');  */
+   background-size: contain;
+   /* z-index: 3; */
+
+ }
+
+
+
+ .skills h1 {
+   color: darkturquoise;
+   text-align: center;
+
+ }
+
+ .cube-container {
+   width: 200px;
+   height: 200px;
+   perspective: 800px;
+   margin: 0 auto;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .cube-container h3 {
+   color: #ADEFD1FF;
+   font-weight: lighter;
+   font-family: 'Montserrat', sans-serif;
+   margin-left: 20px;
+
+ }
+
+ .cube {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   transform-style: preserve-3d;
+   transform: rotateX(0deg) rotateY(0deg);
+   animation: rotateAnimation 20s infinite linear;
+   margin-top: 200px;
+   /* Increased margin-top */
+ }
+
+ .face {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #f5f5f5;
+   border: 2px solid #aaaaaa;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 18px;
+   font-weight: bold;
+   text-transform: uppercase;
+
+   opacity: 50%;
+ }
+
+
+ .front {
+   transform: translateZ(100px);
+   user-select: none;
+
+ }
+
+ .back {
+   transform: rotateY(180deg) translateZ(100px);
+   user-select: none;
+
+
+
+ }
+
+ .right {
+   transform: rotateY(90deg) translateZ(100px);
+   user-select: none;
+
+ }
+
+ .left {
+   transform: rotateY(-90deg) translateZ(100px);
+   user-select: none;
+
+ }
+
+ .top {
+   transform: rotateX(90deg) translateZ(100px);
+   user-select: none;
+
+ }
+
+ .bottom {
+   transform: rotateX(-90deg) translateZ(100px);
+   user-select: none;
+
+ }
+
+ #java {
+   width: 60px;
+   height: 80px;
+
+ }
+
+ #python {
+   margin-top: 20px;
+   height: 30px;
+   width: 90px;
+ }
+
+ #c {
+   width: 20px;
+   height: 20px;
+   margin-left: 20px;
+ }
+
+ #git {
+   width: 80px;
+   height: 80px;
+ }
+
+ #github {
+   width: 80px;
+   height: 80px;
+ }
+
+ #html-css-js {
+   width: 180px;
+   height: 60px;
+
+ }
+
+ #photoshop {
+   width: 80px;
+   height: 80px;
+ }
+
+ #xd {
+   width: 80px;
+   height: 80px;
+ }
+
+ #wordpress {
+   width: 100px;
+   height: 100px;
+ }
+
+ #skills-try {
+   width: 120px;
+   height: 120px;
+ }
+
+ @keyframes rotateAnimation {
+   0% {
+     transform: rotateX(0deg) rotateY(0deg);
+   }
+
+   100% {
+     transform: rotateX(360deg) rotateY(360deg);
+   }
+ }
+
+ /* -------------------------------------------------------------worksection */
+
+
+ .work {
+   width: 100%;
+   height: 900px;
+ }
+
+ .work h1 {
+   text-align: center;
+   font-weight: lighter;
+   font-size: 2rem;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #ADEFD1FF;
+ }
+
+ .projects h2 {
+   font-weight: lighter;
+   color: #ADEFD1FF;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   border-bottom: 1px solid #ADEFD1FF;
+
+
+
+ }
+
+ .projects-upper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .project1,
+ .project2,
+ .project3 {
+   width: 300px;
+   height: 300px;
+
+   margin: 35px;
+   border-left: 2px solid #ADEFD1FF;
+   border-right: 2px solid #ADEFD1FF;
+   border-radius: 20px;
+   box-shadow: 10px 10px 29px rgba(89, 255, 216, 0.6);
+ }
+
+ .projects-lower {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .project4,
+ .project5,
+ .project6 {
+   width: 300px;
+   height: 300px;
+
+   margin: 35px;
+   border-top: 4px;
+   border-left: 2px solid #ADEFD1FF;
+   border-right: 2px solid #ADEFD1FF;
+   border-radius: 20px;
+   box-shadow: 10px 10px 29px rgba(89, 255, 216, 0.6);
+ }
+
+
+ .project-img {
+   display: flex;
+   margin-left: 8px;
+   width: 280px;
+   height: 200px;
+
+   /* border: 2px solid red; */
+ }
+
+ .project-img img {
+   width: 150px;
+   height: 150px;
+
+ }
+
+ .left-arrow {
+   height: 40px;
+   width: 20px;
+   background-color: #ADEFD1FF;
+   margin-top: 73px;
+
+
+ }
+
+ .right-arrow {
+   height: 40px;
+   width: 20px;
+   background-color: #ADEFD1FF;
+   margin-top: 73px;
+   margin-left: 245px;
+ }
+
+ .fa-chevron-left {
+   margin-top: 20px;
+   margin-left: 1px;
+   cursor: pointer;
+ }
+
+ .fa-chevron-right {
+   margin-top: 20px;
+   margin-inline-end: 4px;
+   cursor: pointer;
+ }
+
+ /* -------------------------------------------------------------conatact-section */
+ .contact {
+
+   background-image: url('/Images/mountain-contact-back.jpg');
+   width: 100%;
+   height: 800px;
+   background-color: rgb(0, 17, 35);
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .contact-back {
+   background: linear-gradient(90deg, rgba(173, 239, 209, 1) 0%, rgba(0, 32, 63, 1) 100%);
+   width: 100%;
+   height: 800px;
+   opacity: 90%;
+
+ }
+
+ .contact h2 {
+   color: #ADEFD1FF;
+   text-align: center;
+   font-size: 2.5rem;
+   font-weight: light;
+   font-family: 'Montserrat', sans-serif;
+
+ }
+
+ .contact-page {
+   width: 500px;
+   height: 500px;
+   border: 2px solid red;
+   margin-left: 370px;
+
+ }
+
+ .contact-back h1 {
+   color: #ADEFD1FF;
+   text-align: center;
+   font-size: 2.5rem;
+   font-weight: lighter;
+   font-family: 'Montserrat', sans-serif;
+
+ }
+
+ .contact-back-page {
+
+   width: 500px;
+   height: 500px;
+   border-radius: 10px;
+   margin-left: 380px;
+   background-color: #00203FFF;
+
+ }
+
+ .contact-back-page input {
+   margin-left: 40px;
+   margin-top: 40px;
+   width: 400px;
+   height: 40px;
+   border: none;
+   background-color: #00203FFF;
+   border-bottom: 2px solid #ADEFD1FF;
+   outline: none;
+   color: #ADEFD1FF;
+   font-family: 'Montserrat', sans-serif;
+ }
+
+ .contact-back-page textarea {
+   margin-left: 40px;
+   margin-top: 40px;
+   width: 400px;
+   height: 100px;
+   border: none;
+   background-color: #00203FFF;
+   border-bottom: 2px solid #ADEFD1FF;
+   outline: none;
+   color: #ADEFD1FF;
+   font-family: 'Montserrat', sans-serif;
+ }
+
+ .cont-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .cont-button button {
+   font-weight: light;
+   font-family: 'Montserrat', sans-serif;
+   margin-top: 40px;
+   width: 200px;
+   height: 50px;
+   cursor: pointer;
+   border: none;
+   border-radius: 4px;
+   outline: none;
+
+ }
+
+ .cont-button button:hover {
+   background-color: #ADEFD1FF;
+   width: 250px;
+   height: 50px;
+
+   transition: 0.4s ease-in-out;
+
+ }
+ ::-webkit-scrollbar {
+  width: 8px;
+  scroll-behavior: smooth;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00203FFF;
+  border: 2px solid #ADEFD1FF;
+  border-radius: 2px;
+
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ADEFD1FF;
+  border-radius: 5px;
+ 
+ 
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#ADEFD1FF; 
+ 
+ 
+}
